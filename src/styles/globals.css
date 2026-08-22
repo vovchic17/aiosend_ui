@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+@import "./theme.css";
+
+@theme inline {
+  --color-page: var(--color-page-bg);
+  --color-surface: var(--color-card-bg);
+  --color-header-surface: var(--color-header-bg);
+  --color-field: var(--color-data-field-bg);
+  --color-field-active: var(--color-data-field-active-bg);
+
+  --color-code-surface: var(--color-code-bg);
+  --color-syntax-built-in: var(--color-code-built-in);
+  --color-syntax-keyword: var(--color-code-keywords);
+  --color-syntax-parameter: var(--color-code-parameters);
+  --color-syntax-string: var(--color-code-strings);
+  --color-syntax-class: var(--color-code-classes);
+  --color-syntax-number: var(--color-code-numbers);
+
+  --color-danger-surface: var(--color-error-bg);
+  --color-slider: var(--color-slider-bg);
+  --color-slider-tab: var(--color-slider-tab-bg);
+
+  --color-badge-active-surface: var(--color-wrapper-active-bg);
+  --color-badge-primary-surface: var(--color-wrapper-primary-bg);
+  --color-badge-muted-surface: var(--color-wrapper-muted-bg);
+  --color-badge-active: var(--color-wrapper-active-text);
+  --color-badge-primary: var(--color-wrapper-primary-text);
+  --color-badge-muted: var(--color-wrapper-muted-text);
+
+  --color-button: var(--color-btn-bg);
+  --color-button-hover: var(--color-btn-hover-bg);
+  --color-button-active: var(--color-btn-active-bg);
+
+  --color-table-header: var(--color-table-header-bg);
+  --color-table-rule: var(--color-table-border);
+  --color-status-blue-surface: var(--color-status-bg-blue);
+  --color-status-grey-surface: var(--color-status-bg-grey);
+
+  --color-content: var(--color-text);
+  --color-content-muted: var(--color-text-muted);
+  --color-content-muted-light: var(--color-text-muted-light);
+  --color-status-blue: var(--color-text-status-blue);
+  --color-status-grey: var(--color-text-status-grey);
+  --color-link: var(--color-text-link);
+  --color-danger: var(--color-text-error);
+  --color-copy-success: var(--color-text-copy-success);
+  --color-on-button: var(--color-text-btn);
+  --color-field-content: var(--color-text-data-field);
+  --color-subtle-border: var(--color-sup-border);
+  --color-balance-rule: var(--color-balance-border);
+
+  --font-body: "Inter", sans-serif;
+
+  --shadow-panel: var(--shadow);
+}
+
+* {
+  line-height: 100%;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--color-page-bg);
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.backdrop-glass {
+  backdrop-filter: var(--blur);
+}
+
+.text-h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.text-h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.text-body {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.text-body-accent {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.text-body-italic {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 120%;
+}
+
+.text-secondary {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.text-small {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.text-code-m {
+  font-family: "Azeret Mono", monospace;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.text-code-b {
+  font-family: "Azeret Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.code-signature,
+.code-signature * {
+  line-height: 120%;
+}
+
+.slider-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: var(--color-slider-border);
+  pointer-events: none;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.code-signature {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 639px) {
+  .text-h1 { font-size: 26px; }
+  .text-h2 { font-size: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .morph-switch-shell {
+    transition: none !important;
+  }
+}

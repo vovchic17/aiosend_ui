@@ -1,0 +1,145 @@
+:root {
+  --color-page-bg: rgb(241, 242, 246);
+  --color-card-bg: rgb(255, 255, 255);
+  --color-header-bg: rgba(255, 255, 255, 0.6);
+
+  --color-data-field-bg: rgba(3, 16, 30, 0.1);
+  --color-data-field-active-bg: rgba(3, 16, 30, 0.15);
+
+  --color-code-bg: rgba(3, 16, 30, 0.05);
+  --color-code-built-in: rgb(37, 99, 235);
+  --color-code-keywords: rgb(20, 141, 255);
+  --color-code-parameters: rgb(9, 120, 167);
+  --color-code-strings: rgb(90, 115, 144);
+  --color-code-classes: rgb(3, 16, 30);
+  --color-code-numbers: rgba(90, 115, 144, 0.3);
+
+  --color-icon-bg: linear-gradient(90deg, #4db2ff 0%, #148dff 100%);
+  --color-icon-border: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+
+  --color-error-bg: rgba(224, 34, 37, 0.2);
+  --color-slider-bg: rgb(255, 255, 255);
+  --color-slider-tab-bg: rgba(3, 16, 30, 0.05);
+  --color-slider-border:
+    radial-gradient(
+      ellipse 50% 72% at 50% 28%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    ),
+    radial-gradient(
+      ellipse 54% 190% at 58% 220%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    rgba(255, 255, 255, 0.5);
+
+  --color-wrapper-active-bg: rgba(58, 197, 63, 0.3);
+  --color-wrapper-primary-bg: rgba(77, 178, 255, 0.15);
+  --color-wrapper-muted-bg: rgba(3, 16, 30, 0.15);
+  --color-wrapper-active-text: rgb(58, 197, 63);
+  --color-wrapper-primary-text: rgb(77, 178, 255);
+  --color-wrapper-muted-text: rgba(3, 16, 30, 0.5);
+
+  --color-btn-bg: rgb(3, 16, 30);
+  --color-btn-hover-bg: rgb(5, 23, 43);
+  --color-btn-active-bg: rgb(2, 12, 23);
+
+  --color-table-header-bg: rgba(3, 16, 30, 0.1);
+  --color-table-border: rgba(3, 16, 30, 0.1);
+
+  --color-status-bg-blue: rgba(77, 178, 255, 0.15);
+  --color-status-bg-grey: rgba(3, 16, 30, 0.15);
+
+  --color-text: rgb(3, 16, 30);
+  --color-text-muted: rgba(3, 16, 30, 0.5);
+  --color-text-muted-light: rgba(3, 16, 30, 0.5);
+  --color-text-status-blue: rgb(77, 178, 255);
+  --color-text-status-grey: rgba(3, 16, 30, 0.5);
+  --color-text-link: rgb(20, 141, 255);
+  --color-text-error: rgb(224, 34, 37);
+  --color-text-copy-success: rgb(34, 134, 58);
+  --color-text-btn: rgb(255, 255, 255);
+  --color-text-slider: rgb(3, 16, 30);
+  --color-text-data-field: rgba(3, 16, 30, 0.5);
+
+  --color-sup-border: rgba(3, 16, 30, 0.05);
+  --color-balance-border: rgba(3, 16, 30, 0.05);
+
+  --blur: blur(8px);
+  --shadow: 0 0 100px 0 rgba(3, 16, 30, 0.05);
+}
+
+.dark {
+  --color-page-bg: rgb(13, 14, 16);
+  --color-card-bg: rgba(255, 255, 255, 0.05);
+  --color-header-bg: rgba(255, 255, 255, 0.05);
+
+  --color-data-field-bg: rgba(255, 255, 255, 0.05);
+  --color-data-field-active-bg: rgba(255, 255, 255, 0.1);
+
+  --color-code-bg: rgba(255, 255, 255, 0.05);
+  --color-code-built-in: rgb(69, 127, 255);
+  --color-code-keywords: rgb(20, 141, 255);
+  --color-code-parameters: rgb(18, 209, 255);
+  --color-code-strings: rgb(141, 167, 198);
+  --color-code-classes: rgb(255, 255, 255);
+  --color-code-numbers: rgba(141, 167, 198, 0.3);
+
+  --color-icon-bg: linear-gradient(90deg, #2b2e34 0%, #0d0e10 100%);
+  --color-icon-border: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+
+  --color-error-bg: rgba(224, 34, 37, 0.2);
+  --color-slider-bg: rgba(255, 255, 255, 0.05);
+  --color-slider-tab-bg: rgba(255, 255, 255, 0.05);
+  --color-slider-border:
+    radial-gradient(
+      ellipse 50% 72% at 50% 28%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.15) 100%
+    ),
+    radial-gradient(
+      ellipse 100% 70% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    rgba(255, 255, 255, 0);
+
+  --color-wrapper-active-bg: rgba(58, 197, 63, 0.3);
+  --color-wrapper-primary-bg: rgba(77, 178, 255, 0.15);
+  --color-wrapper-muted-bg: rgba(255, 255, 255, 0.05);
+  --color-wrapper-active-text: rgb(58, 197, 63);
+  --color-wrapper-primary-text: rgb(77, 178, 255);
+  --color-wrapper-muted-text: rgba(255, 255, 255, 0.5);
+
+  --color-btn-bg: rgb(20, 141, 255);
+  --color-btn-hover-bg: rgb(39, 150, 255);
+  --color-btn-active-bg: rgb(19, 138, 249);
+
+  --color-table-header-bg: rgba(255, 255, 255, 0.1);
+  --color-table-border: rgba(255, 255, 255, 0.1);
+
+  --color-status-bg-blue: rgba(77, 178, 255, 0.15);
+  --color-status-bg-grey: rgba(255, 255, 255, 0.15);
+
+  --color-text: rgb(255, 255, 255);
+  --color-text-muted: rgba(255, 255, 255, 0.5);
+  --color-text-muted-light: rgba(255, 255, 255, 0.5);
+  --color-text-status-blue: rgb(77, 178, 255);
+  --color-text-status-grey: rgba(255, 255, 255, 0.8);
+  --color-text-link: rgb(20, 141, 255);
+  --color-text-error: rgb(224, 34, 37);
+  --color-text-copy-success: rgb(34, 134, 58);
+  --color-text-btn: rgb(255, 255, 255);
+  --color-text-slider: rgb(255, 255, 255);
+  --color-text-data-field: rgba(255, 255, 255, 0.5);
+
+  --color-sup-border: rgba(255, 255, 255, 0.1);
+  --color-balance-border: transparent;
+
+  --blur: blur(8px);
+  --shadow: 0 0 100px 0 rgba(3, 16, 30, 0.05);
+}
